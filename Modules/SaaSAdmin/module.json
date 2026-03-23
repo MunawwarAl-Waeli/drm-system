@@ -1,0 +1,12 @@
+{
+    "name": "SaaSAdmin",
+    "alias": "saasadmin",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SaaSAdmin\\Providers\\SaaSAdminServiceProvider",
+        "Modules\\SaaSAdmin\\Providers\\EventServiceProvider"
+    ],
+    "files": []
+}

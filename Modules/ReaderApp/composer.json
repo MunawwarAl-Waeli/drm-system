@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/readerapp",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ReaderApp\\": "app/",
+            "Modules\\ReaderApp\\Database\\Factories\\": "database/factories/",
+            "Modules\\ReaderApp\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\ReaderApp\\Tests\\": "tests/"
+        }
+    }
+}

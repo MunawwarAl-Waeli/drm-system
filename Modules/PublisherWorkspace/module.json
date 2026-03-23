@@ -1,0 +1,11 @@
+{
+    "name": "PublisherWorkspace",
+    "alias": "publisherworkspace",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PublisherWorkspace\\Providers\\PublisherWorkspaceServiceProvider"
+    ],
+    "files": []
+}

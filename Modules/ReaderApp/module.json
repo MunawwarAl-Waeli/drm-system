@@ -1,0 +1,11 @@
+{
+    "name": "ReaderApp",
+    "alias": "readerapp",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ReaderApp\\Providers\\ReaderAppServiceProvider"
+    ],
+    "files": []
+}
