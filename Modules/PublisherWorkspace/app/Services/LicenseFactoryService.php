@@ -21,14 +21,18 @@ class LicenseFactoryService
 
         // إعدادات OpenSSL
         $this->sslConfig = [
-            "config" => "C:/xampp/php/extras/ssl/openssl.cnf", // عدلها حسب بيئتك لو تغيرت
+            // "config" => "C:/xampp/php/extras/ssl/openssl.cnf", // عدلها حسب بيئتك لو تغيرت
             "digest_alg" => "sha256",
         ];
 
         // تهيئة مفتاح السيرفر السيادي
-        $keyPath = config('saasadmin.server_private_key_path');
-        $directory = dirname($keyPath);
+        // $keyPath = config('saasadmin.server_private_key_path');
 
+        // $directory = dirname($keyPath);
+        $keyPathRelative = config('saasadmin.server_private_key_path');
+        $keyPath = base_path($keyPathRelative);
+        
+        $directory = dirname($keyPath);
         if (!is_dir($directory)) {
             mkdir($directory, 0755, true);
         }
